@@ -1,0 +1,12 @@
+form.it-price__info-form.it-form--hide(action="" method="POST" )
+	.it-price__info-title Оставьте данные для заявки
+	.it-price__info-inner-wrap
+		input.it-callback__input(type="text" name="NAME" maxlength="200" placeholder="Ваше имя")
+		input.it-callback__input(type="tel" name="PHONE" maxlength="200" placeholder="Ваш телефон")
+		.it-callback__checkbox-wrap
+			label.it-checkbox
+				input.it-checkbox__default(type="checkbox" name="AGREE" checked)
+				span.it-checkbox__pseudo
+				span.it-checkbox__text Я согласен с Политикой конфеденциальности
+		.it-price__buttons
+			a.it-btn.it-price__btn(href="") Заявка на ремонт
