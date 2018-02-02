@@ -45,6 +45,8 @@ body * {
   line-height: 1.4;
   text-align: center;
   font-weight: 300;
+  position: relative;
+  z-index: 1;
 }
 
 .it-all-title--color {
@@ -376,7 +378,7 @@ body * {
   border: 1px solid rgba(80, 66, 66, 0.2);
   font-size: 14px;
   padding: 10px 13px;
-  border-radius: 8px;
+  border-radius: 5px;
   line-height: 1.4;
   width: 100%;
   margin-bottom: 10px;
@@ -525,7 +527,7 @@ label {
 }
 
 .it-checkbox__pseudo:before {
-  content: '\002714';
+  content: '';
   display: block;
   position: absolute;
   top: 0;
@@ -538,6 +540,7 @@ label {
   opacity: 0;
   transition: all 0.225s ease-in-out;
   transform: scale(0.4);
+  background: url(../img/check.png) center no-repeat;
 }
 
 
@@ -672,6 +675,25 @@ label {
   background-position: top;
   color: #ffffff;
   padding-bottom: 4%;
+  position: relative;
+}
+
+.it-repairs:before {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.it-repairs__wrap {
+  position: relative;
+  z-index: 1;
 }
 
 .it-repairs__list {
@@ -873,7 +895,7 @@ label {
   position: absolute;
   width: 36px;
   height: 36px;
-  border-radius: 50%;
+  border-radius: 48%;
   bottom: 17%;
   font-size: 0;
   background-color: #47474D;
@@ -900,7 +922,7 @@ label {
 .it-jobs .box-carousel  .owl-nav .owl-next:after {
   content: "";
   position: absolute;
-  top: 50%;
+  top: 48%;
   width: 0;
   height: 0;
   margin-top: -3px;
@@ -1023,18 +1045,18 @@ label {
 }
 
 .it-advice__sign-wrap:before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 0;
-    height: 0;
-    margin-top: -2px;
-    margin-left: -3.5px;
-    border-right: 4px solid transparent;
-    border-left: 4px solid transparent;
-    border-top: 7px solid #ffffff;
-    transition: 0.2s;
+  content: "";
+  position: absolute;
+  top: 48%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  margin-top: -2px;
+  margin-left: -5.5px;
+  border-right: 5px solid transparent;
+  border-left: 5px solid transparent;
+  border-top: 7px solid #fff;
+  transition: .2s;
 }
 
 .it-advice__sign-wrap.active {
