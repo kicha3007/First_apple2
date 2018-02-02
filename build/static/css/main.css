@@ -17,7 +17,7 @@ html {
 }
 
 .it-container {
-  max-width: 1160px;
+  max-width: 1170px;
   width: 100%;
   padding: 0 15px;
   margin: 0 auto
@@ -117,11 +117,11 @@ html {
 .it-price__inner-wrap {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
   margin: 0 -20px;
   overflow: hidden;
   padding: 35px 0;
-  position: relative
+  position: relative;
 }
 
 .it-price__info-item:before,.it-price__inner-wrap:before {
@@ -136,7 +136,7 @@ html {
 }
 
 .it-price__inner-item {
-  max-width: 300px;
+  max-width: 275px;
   flex-grow: 1;
   flex-basis: 170px;
   margin: 0 20px;
@@ -187,7 +187,7 @@ html {
 }
 
 .it-price__inner-item--size {
-  max-width: 130px;
+  max-width: 131px;
   text-align: left;
   margin: 0 100px 10px
 }
@@ -198,8 +198,10 @@ html {
 }
 
 .it-price__inner-item--size2 {
-  margin: 0 5px 10px;
-  flex-basis: 220px
+  margin: 0 5px 0;
+  flex-basis: 220px;
+  flex-basis: 25%;
+  min-height: 44px;
 }
 
 .it-price__info-wrap {
@@ -518,7 +520,7 @@ label {
   align-items: center;
   border: 1px solid #d0d0d0;
   padding: 5% 0;
-  flex-basis: 285px;
+  flex-basis: 287px;
   flex-grow: 1;
   max-width: 375px
 }
@@ -667,7 +669,6 @@ label {
 
 .it-repairs__checkbox-wrap .it-checkbox__text {
   color: #fff;
-  margin-bottom: 10px
 }
 
 .it-jobs__wrap {
@@ -877,7 +878,7 @@ label {
 
 .it-advice__sign-wrap.active:before {
   transform: rotate(180deg);
-  top: 49%
+  top: 46%
 }
 
 .it-advice__content {
